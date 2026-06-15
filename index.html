@@ -3,319 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="A framework for peptide identification on commercial nanopore sequencing platforms - Denis Beslic, Martin Kucklick, Eric Graap, Somayyeh Sedaghatjoo, Bernhard Y. Renard, Stephan Fuchs, Susanne Engelmann, Nils Körber">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
+
+  <meta name="title" content="A framework for peptide identification on commercial nanopore sequencing platforms - Denis Beslic et al.">
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
+  <meta name="keywords" content="Nanopore, ML, Signal processing, Proteomics">
   <meta name="author" content="Denis Beslic, Martin Kucklick, Eric Graap, Somayyeh Sedaghatjoo, Bernhard Y. Renard, Stephan Fuchs, Susanne Engelmann, Nils Körber">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <title>A framework for peptide identification | Academic Project</title>
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "A framework for peptide identification on commercial nanopore sequencing platforms",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "Denis Beslic",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "Robert Koch Institute"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
 </head>
+
 <body>
 
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+          <h1 class="title is-1 publication-title">
+            A framework for peptide identification on commercial nanopore sequencing platforms
+          </h1>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="beslicd@rki.de" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+          <div class="is-size-5 publication-authors">
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <span class="author-block">
+              <a href="mailto:beslicd@rki.de">Denis Beslic</a><sup>*</sup>,
+            </span>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://www.biorxiv.org/content/10.64898/2026.05.19.726067v1" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Preprint</span>
-                      </a>
-                    </span>
+            <span class="author-block">
+              Martin Kucklick<sup>*</sup>,
+            </span>
 
-                  <span class="link-block">
-                    <a href="https://github.com/ZKI-PH-ImageAnalysis/nanopore-peptide-identification" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+            <span class="author-block">
+              Eric Graap,
+            </span>
 
-        
-                      
-            </div>
+            <span class="author-block">
+              Somayyeh Sedaghatjoo,
+            </span>
+
+            <span class="author-block">
+              Bernhard Y. Renard,
+            </span>
+
+            <span class="author-block">
+              Stephan Fuchs<sup>#</sup>,
+            </span>
+
+            <span class="author-block">
+              Susanne Engelmann<sup>#</sup>,
+            </span>
+
+            <span class="author-block">
+              Nils Körber<sup>#</sup>
+            </span>
+
           </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              1 Image Analysis (ZKI-PH3), Robert Koch Institute, Berlin, Germany<br>
+              2 TU Braunschweig, Institute for Microbiology, Germany<br>
+              3 Helmholtz Centre for Infection Research, Germany<br>
+              4 Robert Koch Institute, Genome Competence Center, Berlin<br>
+              5 Hasso Plattner Institute, University of Potsdam
+            </span>
+
+            <br>
+
+            <span class="eql-cntrb">
+              <small><sup>*</sup>These authors contributed equally</small>
+              <small><sup>#</sup>Shared senior authorship</small>
+            </span>
+          </div>
+
+          <div class="publication-links">
+            <a href="https://www.biorxiv.org/content/10.64898/2026.05.19.726067v1"
+               class="button is-dark is-rounded" target="_blank">
+              Preprint
+            </a>
+
+            <a href="https://github.com/ZKI-PH-ImageAnalysis/nanopore-peptide-identification"
+               class="button is-dark is-rounded" target="_blank">
+              Code
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Direct single-molecule peptide analysis could in principle enable rapid and sensitive identification of pathogen-derived or disease-associated biomarkers without reliance on mass spectrometry. However, existing nanopore peptide sensing methods are typically constrained by limited throughput and lack of accessibility beyond specialized setups.
-            Here, we present an integrated experimental-computational framework for DNA-linked peptide translocation on a commercially available, high-throughput nanopore sequencing platform, the MinION. Synthetic peptides were covalently bound to oligonucleotides at both termini. The resulting peptide-DNA constructs were then translocated through the CsgG-CsgF pores using a DNA motor protein. Current traces were segmented using the known DNA sequences to extract peptide-associated signal regions. From these segments, we extracted signal features and trained feature-based and deep-learning classifiers to distinguish peptides, balancing interpretability and classification performance.
-            We establish a framework for peptide identification using standard nanopore sequencing hardware. Across a diverse panel of synthetic peptides, our approach resolves single-amino-acid substitutions, maintains performance across independent sequencing runs, and correctly identifies peptides in blind mixtures. Interpretable model analyses connect classifier decisions and common errors to specific signal motifs. By combining commercially available instrumentation with a reproducible experimental and computational workflow, this framework lowers the barrier to nanopore-based proteomics and enables broader adoption across laboratories. It provides a foundation for future developments in amino acid modification detection and sequence analysis.
-          </p>
-        </div>
-      </div>
-    </div>
+    <h2 class="title is-3 has-text-centered">Abstract</h2>
+    <p class="content has-text-justified">
+      Direct single-molecule peptide analysis could in principle enable rapid and sensitive identification of pathogen-derived or disease-associated biomarkers without reliance on mass spectrometry...
+    </p>
   </div>
 </section>
-<!-- End paper abstract -->
 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
 
+    <h2 class="title">BibTeX</h2>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>author = {Beslic, Denis and Kucklick, Martin and Graap, Eric and Sedaghatjoo, Somayyeh and Renard, Bernhard Y. and Fuchs, Stephan and Engelmann, Susanne and K{\"o}rber, Nils},
-	title = {A framework for peptide identification on commercial nanopore sequencing platforms},
-	elocation-id = {2026.05.19.726067},
-	year = {2026},
-	doi = {10.64898/2026.05.19.726067},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2026/05/21/2026.05.19.726067},
-	eprint = {https://www.biorxiv.org/content/early/2026/05/21/2026.05.19.726067.full.pdf},
-	journal = {bioRxiv}
+    <pre><code>
+@article{beslic2026framework,
+  author = {Beslic, Denis and Kucklick, Martin and Graap, Eric and Sedaghatjoo, Somayyeh and Renard, Bernhard Y. and Fuchs, Stephan and Engelmann, Susanne and K{\"o}rber, Nils},
+  title = {A framework for peptide identification on commercial nanopore sequencing platforms},
+  year = {2026},
+  journal = {bioRxiv},
+  doi = {10.64898/2026.05.19.726067},
+  url = {https://www.biorxiv.org/content/10.64898/2026.05.19.726067v1}
 }
-}</code></pre>
-    </div>
+    </code></pre>
+
+  </div>
 </section>
-<!--End BibTex citation -->
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Built using the Academic Project Page Template.
+    </p>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
