@@ -113,6 +113,24 @@
 </section>
 
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
 <!-- ABSTRACT -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -120,9 +138,21 @@
 
     <div class="content has-text-justified">
       <p>
-        Direct single-molecule peptide analysis enables rapid biomarker identification without mass spectrometry.
-        We present a nanopore-based framework using DNA-linked peptides on a MinION platform, enabling peptide
-        identification via signal segmentation, feature extraction, and machine learning classification.
+        Direct single-molecule peptide analysis could in principle enable rapid and sensitive identification of pathogen-derived 
+        or disease-associated biomarkers without reliance on mass spectrometry. However, existing nanopore peptide sensing methods 
+        are typically constrained by limited throughput and lack of accessibility beyond specialized setups. Here, we present an 
+        integrated experimental-computational framework for DNA-linked peptide translocation on a commercially available, high-throughput 
+        nanopore sequencing platform, the MinION. Synthetic peptides were covalently bound to oligonucleotides at both termini. The 
+        resulting peptide-DNA constructs were then translocated through the CsgG-CsgF pores using a DNA motor protein. Current traces 
+        were segmented using the known DNA sequences to extract peptide-associated signal regions. From these segments, we extracted 
+        signal features and trained feature-based and deep-learning classifiers to distinguish peptides, balancing interpretability 
+        and classification performance. We establish a framework for peptide identification using standard nanopore sequencing hardware. 
+        Across a diverse panel of synthetic peptides, our approach resolves single-amino-acid substitutions, maintains performance across 
+        independent sequencing runs, and correctly identifies peptides in blind mixtures. Interpretable model analyses connect 
+        classifier decisions and common errors to specific signal motifs. By combining commercially available instrumentation with 
+        a reproducible experimental and computational workflow, this framework lowers the barrier to nanopore-based proteomics and 
+        enables broader adoption across laboratories. It provides a foundation for future developments in amino acid modification detection 
+        and sequence analysis.
       </p>
     </div>
   </div>
