@@ -49,6 +49,11 @@ body {
   overflow: hidden;
 }
 
+.abstract-text {
+  font-size: 0.95rem; 
+  line-height: 1.6;
+}
+
 .button.is-dark {
   background: var(--text-primary) !important;
   border: none !important;
